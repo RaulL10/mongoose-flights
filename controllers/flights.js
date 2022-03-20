@@ -10,17 +10,13 @@ module.exports = {
 function newFlight(req, res) {
     res.render('flights/new')
 }
+
 function create(req, res) {
-    // req.body.airline = 
-    // req.body.airport = req.body.airport
-    // // req.body.flightNo =
-    // // req.body.departs =
+    for (let departs in req.body) {
+        if (req.body[departs] === '') delete req.body[departs];
+    }
+    const flight = new Flight(req.body);
     
-    console.log(req.body)
-    console.log(req.body.airline)
-    console.log()
-    console.log("i am creating")
-    const flight = new Flight(req.body)
     flight.save(function(err) {
         if (err) return res.render('flights/new');
         res.redirect('/flights');

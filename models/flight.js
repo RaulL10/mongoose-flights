@@ -5,23 +5,29 @@ const flightSchema = new Schema ({
     airline: {
         type: String,
         enum: ['American', 'Southwest', 'United'],
+        required: true
     }, 
     airport: {
         type: String,
         enum: ['AUS', 'DFW', 'DEN', 'LAX', 'SAN'],
-        default: 'DEN'
+        default: 'DEN',
+        required: true
     },
     flightNo: {
         type: Number,
-        minlength: 10,
-        maxlength: 9999
+        required: true,
+        min: 10,
+        max: 9999,
     },
     departs: {
         type: Date,
+        required: true,
         default: function () {
-            return new Date().getFullYear()
+            return new Date()
         }
     }
+}, {
+    timestamps: true
 })
 
 

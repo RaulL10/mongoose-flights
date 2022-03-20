@@ -8,7 +8,7 @@
 </head>
 <body>
     <h1>ALL FLIGHTS</h1>
-    <!-- <form action="/" method="GET"> -->
+    <form action="/" method="GET">
         <table>
             <thead>
                 <tr>
@@ -20,7 +20,6 @@
             </thead>
             <tbody>
                 <% flights.forEach(function(f) { %>
-
                     <tr>
                         <td><%= f.airline %></td>
                         <td><%= f.airport %></td>
@@ -28,9 +27,9 @@
                         <td><%= f.departs %></td>      
                     </tr>
                 <% }) %>
-                </tbody>
-            </table>
-            <!-- <input type="submit" value="Main Menu"> -->
-        <!-- </form>         -->
-    </body>
-    </html>
+            </tbody>
+        </table>
+        <input type="submit" value="Main Menu"> 
+     </form>        
+</body>
+ </html>
