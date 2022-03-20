@@ -4,10 +4,33 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Mongoose Flights</title>
 </head>
 <body>
     <h1>ALL FLIGHTS</h1>
-    
-</body>
-</html>
+    <!-- <form action="/" method="GET"> -->
+        <table>
+            <thead>
+                <tr>
+                    <th>Airline</th>
+                    <th>Airport</th>
+                    <th>Flight #</th>
+                    <th>Departs</th>    
+                </tr>
+            </thead>
+            <tbody>
+                <% flights.forEach(function(f) { %>
+
+                    <tr>
+                        <td><%= f.airline %></td>
+                        <td><%= f.airport %></td>
+                        <td><%= f.flightNo %></td>
+                        <td><%= f.departs %></td>      
+                    </tr>
+                <% }) %>
+                </tbody>
+            </table>
+            <!-- <input type="submit" value="Main Menu"> -->
+        <!-- </form>         -->
+    </body>
+    </html>
