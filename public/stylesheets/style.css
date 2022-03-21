@@ -1,8 +1,51 @@
 body {
   padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  font-family: 'IBM Plex Mono', monospace;;
+}
+#main {
+  background-image: url(https://i.imgur.com/9qE2ZF0.jpg)
+}
+#flightsMenu {
+  background-image: url(https://i.imgur.com/9qE2ZF0.jpg);
 }
 
+
 a {
-  color: #00B7FF;
+  color: #232323;
+  padding-inline: 40px;
+  /* font-size: ; */
+}
+h1 {
+ text-align: center;
+ font-size: 120px;
+ padding: 20px 0px 15px 0px;
+ margin: 0;
+ color: lightgray;
+}
+nav {
+  text-align: center;
+  font-size: 50px;
+  background-color: lightgray;
+  
+}
+table {
+  float: right;
+  color: lightgray;
+  font-size: 18px;
+}
+#mainMenu {
+  position: absolute;
+  bottom: 0;
+  margin-bottom: 60px;
+  background-color: lightgray;
+  font-size: 50px;
+  color: #232323;
+}
+th {
+  border-bottom: 3px solid;
+  padding-right: 25px;
+}
+td {
+  border-bottom: 1px solid;
+  border-right: 1px solid;
 }
