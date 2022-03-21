@@ -10,9 +10,9 @@
     <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&display=swap" rel="stylesheet"> 
     <title>Document</title>
 </head>
-<body>
+<body id="new">
     <h1>New Flights</h1>
-    <form action="/flights" method="POST">
+    <form id="newForm" action="/flights" method="POST">
         <label>Airline:
             <select name="airline">
                 <option value="American">American</option>
@@ -29,13 +29,13 @@
                 <option value="SAN">SAN</option>
             </select>
         </label><br>
-        <lable>Flight #:
-            <input type="number" name="flightNo">
+        <lable id="flightNo" >Flight #:
+            <input id="num" type="number" name="flightNo">
         </lable><br>
         <label>Departs:
-            <input type="datetime-local" name="departs">
+            <input id="date" type="datetime-local" name="departs">
         </label><br>
-        <input type="submit" value="Add Flight">
+        <input id="addFlight" type="submit" value="Add Flight">
     </form>
 </body>
 </html>
