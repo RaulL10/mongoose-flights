@@ -98,4 +98,8 @@ h2 {
 }
 #addTicket {
   background-color: aliceblue;
+  margin-top: 50px;
+}
+#tickets {
+  margin-top: 50px;
 }

@@ -44,8 +44,18 @@
         <h3>No Destinations Yet</h3>
     <% } %>
 
-    <a href="/tickets/new" id="addTicket">Create Ticket</a>
     
+    <div id="tickets">
+        <% if (tickets.length) { %>
+        <label>Tickets</label>
+        <% tickets.forEach(function(t) { %>
+        <ul>
+            <li id="seats"><%= t.seat %><small id="price">$<%= t.price %></small></p></li>
+        </ul>
+        <% }); %>
+        <% } %>
+    </div>
+    <a href="/flights/<%= flight.id %>/tickets/new" id="addTicket">Create Ticket</a>
 
 </body>
 
