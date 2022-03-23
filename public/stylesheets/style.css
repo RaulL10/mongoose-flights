@@ -96,4 +96,6 @@ h2 {
  font-size: 25px;
  float: none;
 }
-
+#addTicket {
+  background-color: aliceblue;
+}
