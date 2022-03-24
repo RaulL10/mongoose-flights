@@ -19,10 +19,13 @@ nav {
   background-color: lightgray;
 
 }
+input{
+  font-size: 50px;
+}
 table {
-  float: right;
+  float: center;
   color: lightgray;
-  font-size: 18px;
+  font-size: 30px;
 }
 
 th {
@@ -32,10 +35,11 @@ th {
 td {
   border-bottom: 1px solid;
   border-right: 1px solid;
+  margin: 3px 3px 3px 3px;
 }
 
 #newForm {
-  float: right;
+  float: center;
 }
 label {
   color: lightgray;
@@ -92,14 +96,6 @@ h2 {
   background-image: url(https://i.imgur.com/0TVYjvo.jpeg);
   background-size: cover;
 }
-#arrivals {
- font-size: 25px;
- float: none;
-}
-#addTicket {
-  background-color: aliceblue;
-  margin-top: 50px;
-}
-#tickets {
-  margin-top: 50px;
-}
+
+
+

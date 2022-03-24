@@ -1,0 +1,100 @@
+#detailsBody{
+    padding: 50px;
+    background-color:#232323;
+    font-family: 'IBM Plex Mono', monospace;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 200px 100px 1fr 1fr;
+    grid-template-areas:
+    'hdr hdr'
+    'nav nav'
+    'det -'
+    'dest tick'  
+}
+h1{
+    grid-area: hdr;
+    text-align: center;
+    font-size: 120px;
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+a {
+    color: #232323;
+    padding-inline: 40px;
+    text-align: center;
+    font-size: 50px;
+
+}
+nav {
+    background-color: lightgray;
+    grid-area: nav;
+    text-align: center;
+}
+#detailPage{
+    grid-area: det;
+    color: lightgray;
+    display: grid;
+    grid-template-columns: auto;
+    font-size: 40px;
+}
+#dest {
+    grid-area: dest;
+    margin-top: 5px;
+}
+
+#tickets {
+    grid-area: tick;
+}
+h3 {
+    text-align: center;
+    font-size: 60px;
+    color: lightgray;
+    text-decoration: underline;
+  
+  }
+  h2 {
+    font-size: 60px;
+    color: lightgray;
+    text-decoration: underline;
+    margin-bottom: 5px;
+    margin-top: 0;
+  }
+#addTicket {
+    background-color: aliceblue;
+    margin-top: 50px;
+    font-size: 55px;
+  }
+  
+  #seats {
+    font-size: 50px;
+    color: lightgray;
+  }
+  #price {
+    font-size: 50px;
+    color: lightgray;
+  
+  }
+  input {
+    font-size: 50px;
+    padding: 5px 10px 5px 10px;
+    margin: 30px;
+  }
+  select {
+    font-size: 40px;
+  }
+  label {
+    color: lightgray;
+    font-size: 55px;
+  }
+  th {
+    border-bottom: 3px solid;
+    padding-right: 25px;
+  }
+  td {
+    border-bottom: 1px solid;
+    border-right: 1px solid;
+  }
+  table {
+    color: lightgray;
+    font-size: 33px;
+  }

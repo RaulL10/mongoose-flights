@@ -1,4 +1,4 @@
-<%- include('../partials/header') %>
+<%- include('../partials/detail') %>
     <section id="detailPage">
         <div class="key" >Airline: <%= flight.airline %></div> 
         <div class="key">Airport: <%= flight.airport %></div>
@@ -6,7 +6,8 @@
         <div class="key">Depart: <%= flight.departs %></div>
     </section>
 
-    <br><br><h2>Destination</h2>
+    <div id="dest">
+    <h2>Destination</h2>
     <form id="addDestination" method="POST" action="/flights/<%= flight._id %>/destinations">
             <label>Airport:
                 <select name="airport">
@@ -43,6 +44,7 @@
     <% } else { %>
         <h3>No Destinations Yet</h3>
     <% } %>
+    </div>
 
     
     <div id="tickets">
@@ -50,15 +52,12 @@
         <label>Tickets</label>
         <% tickets.forEach(function(t) { %>
         <ul>
-            <li id="seats"><%= t.seat %><small id="price">$<%= t.price %></small></p></li>
+            <li id="seats"><%= t.seat %><small id="price"> $<%= t.price %></small></p></li>
         </ul>
         <% }); %>
         <% } %>
+        <a href="/flights/<%= flight.id %>/tickets/new" id="addTicket">Create Ticket</a>
     </div>
-    <a href="/flights/<%= flight.id %>/tickets/new" id="addTicket">Create Ticket</a>
 
-</body>
-
-</html>
 <%- include('../partials/footer') %>
 
